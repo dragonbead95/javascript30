@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #373b44,
+    #4286f4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #373b44,
+    #4286f4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.clock {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock-face {
+  border: 15px solid white;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+}
+.hand {
+  width: 10rem;
+  height: 0.6rem;
+  background-color: black;
+  position: absolute;
+  top: 22rem;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
