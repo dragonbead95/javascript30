@@ -35,12 +35,13 @@ body {
   height: 20rem;
 }
 .hand {
-  width: 10rem;
+  width: 9rem;
   height: 0.6rem;
   background-color: black;
   position: absolute;
   top: 22rem;
   transform-origin: 100%;
   transition: all 0.05s;
+  transform: rotate(90deg);
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
